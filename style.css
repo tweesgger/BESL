@@ -1,0 +1,386 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white; /* White background for the header */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav__logo {
+    width: 150px;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__link {
+    color: #333; /* Default text color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: #21c953d5; /* lime color on hover */
+}
+
+/* Header / Hero Section */
+.header {
+    text-align: center;
+    padding: 150px 20px;
+    background: url('img/oil_rig_background.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px; /* Adjusted for fixed navbar height */
+}
+
+.header__title {
+    max-width: 800px;
+}
+
+.header__title h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.header__title h4 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.btn--text {
+    padding: 15px 30px;
+    background-color: #21c953d5;;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn--text:hover {
+    background-color: #03922ed5;;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+}
+
+.section--light {
+    background-color: #ffffff;
+}
+
+.section--dark {
+    background-color: #f8f9fa;
+}
+
+.section__title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #21c953d5;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about__text {
+    flex: 1;
+}
+
+.about__image {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.service {
+    flex: 1;
+    text-align: center;
+}
+
+.service__icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.service__title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #21c953d5;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.project {
+    flex: 1;
+    text-align: center;
+}
+
+.project__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #21c953d5;
+}
+
+/* Contact */
+.contact__content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact__info {
+    flex: 1;
+}
+
+.contact__map {
+    flex: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    color: #21c953d5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer__nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer__link {
+    color: #21c953d5;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer__social-link i {
+    color: #21c953d5; /* Green color with transparency */
+    font-size: 30px;   /* Adjust the size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer__social-link i:hover {
+    color: #21c953; /* More solid green color on hover */
+}
+
+
+/* .footer__social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social-link img {
+    width: 30px;
+} */
+
+.footer__bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer__copyright {
+    font-size: 0.9rem;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+    height: 100vh;
+    background-color: #f3f3f3;
+    padding: 5rem 5rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.5s;
+    overflow: scroll;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+  }
+
+.hidden{display: none;};
+
+.modal__header {
+    font-size: 3.25rem;
+    margin-bottom: 4.5rem;
+    line-height: 1.5;
+  }
+
+.modal__form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.modal__form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal__form .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal__form .btn:hover {
+    background-color: #0056b3;
+}
+
+.modal__form input {
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+  }
+
+.modal__form input,
+.modal__form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+  .btn--close-modal {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header__title h1 {
+        font-size: 2.5rem;
+    }
+
+    .header__title h4 {
+        font-size: 1.2rem;
+    }
+
+    .about__content,
+    .contact__content {
+        flex-direction: column;
+    }
+
+    .about__image,
+    .contact__map {
+        width: 100%;
+    }
+
+    .services,
+    .projects {
+        flex-direction: column;
+    }
+}
